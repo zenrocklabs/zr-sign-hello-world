@@ -42,11 +42,11 @@ const hardhatConfig: HardhatUserConfig = {
       accounts: hdWallet(),
     },
     binance_testnet: {
-      url: `https://young-falling-diagram.bsc-testnet.quiknode.pro/${process.env.BINANCE_RPC_KEY || ""}/`,
+      url: infuraProvider("bsc-testnet"),
       accounts: hdWallet(),
     },
     base_sepolia: {
-      url: `https://frosty-bold-owl.base-sepolia.quiknode.pro/${process.env.BASE_RPC_KEY || ""}/`,
+      url: infuraProvider("base-sepolia"),
       accounts: hdWallet(),
     },
     optimism_sepolia: {
